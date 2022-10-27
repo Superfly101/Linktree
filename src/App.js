@@ -8,6 +8,22 @@ function App() {
       <main className="container mx-auto px-4">
         <Profile />
         <Links />
+        <div className="flex justify-center gap-4 h-16 p-4">
+          <a>
+            <img
+              src="/icons/slack-icon.png"
+              className="h-full"
+              alt="Slack icon"
+            />
+          </a>
+          <a href="https://github.com/Superfly101/linktree">
+            <img
+              src="/icons/github-icon.png"
+              className="h-full"
+              alt="GitHub icon"
+            />
+          </a>
+        </div>
       </main>
 
       <Footer />
