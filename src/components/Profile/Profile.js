@@ -11,7 +11,7 @@ const Profile = () => {
       </div>
       <p>
         <a id="twitter" href="https://twitter.com/i_amsuperfly">
-          Mugiwara Superfly
+          @i_amsuperfly
         </a>
       </p>
 
