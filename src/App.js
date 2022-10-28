@@ -8,7 +8,7 @@ function App() {
       <main className="container mx-auto px-4">
         <Profile />
         <Links />
-        <div className="flex justify-center gap-4 h-16 p-4">
+        <div className="flex justify-center gap-4 h-14 p-4">
           <a>
             <img
               src="/icons/slack-icon.png"
