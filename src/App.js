@@ -17,7 +17,7 @@ function App() {
       {shareModalShown && <ShareModal onCloseHandler={toggleShareModal} />}
 
       <main className="container mx-auto px-4">
-        {/*Profile Avatar */}
+        {/*Profile section */}
         <Profile onShareHandler={toggleShareModal} />
 
         {/* Profile links section */}
