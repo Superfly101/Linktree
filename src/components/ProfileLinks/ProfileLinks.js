@@ -5,14 +5,14 @@ const Links = () => {
     {
       title: "Twitter Link",
       url: "https://twitter.com/i_amsuperfly",
-      id: "btn_twitter",
+      id: "twitter",
     },
-    { title: "Zuri Team", url: "https://training.zuri.team/", id: "btn_zuri" },
+    { title: "Zuri Team", url: "https://training.zuri.team/", id: "btn__zuri" },
     { title: "Zuri Books", url: "http://books.zuri.team/", id: "books" },
     {
       title: "Python Books",
       url: "https://books.zuri.team/python-for-beginners?ref_id=Superfly",
-      id: "book_python",
+      id: "book__python",
     },
     {
       title: "Background Checks for Code",
@@ -22,7 +22,7 @@ const Links = () => {
     {
       title: "Design Books",
       url: "https://books.zuri.team/design-rules",
-      id: "book_design",
+      id: "book__design",
     },
   ];
   return (
