@@ -5,6 +5,7 @@ const Profile = ({ onShareHandler }) => {
 
   return (
     <section className="flex flex-col items-center p-8 relative">
+      {/* My Avatar */}
       <div className="w-32 rounded-full overflow-hidden">
         <img
           id="profile_img"
@@ -23,6 +24,7 @@ const Profile = ({ onShareHandler }) => {
         Superfly
       </p>
 
+      {/* Desktop view share button */}
       <div
         onClick={onShareHandler}
         className="hidden absolute p-3 border border-dashed rounded-full border-[#D0D5DD] cursor-pointer md:block md:right-[25%]"
@@ -30,6 +32,7 @@ const Profile = ({ onShareHandler }) => {
         <img src="/icons/share.png" alt="share icon" />
       </div>
 
+      {/* Mobile view share button */}
       <div
         onClick={() => {
           setIsExtended((prev) => !prev);

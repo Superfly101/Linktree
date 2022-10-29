@@ -19,6 +19,7 @@ const ShareModal = ({ onCloseHandler }) => {
   const [isCopied, setIsCopied] = useState(false);
 
   return (
+    // Backdrop
     <div
       onClick={(event) => {
         if (event.target === event.currentTarget) {
@@ -27,6 +28,7 @@ const ShareModal = ({ onCloseHandler }) => {
       }}
       className="fixed w-full min-h-screen bg-[rgba(10,11,13,0.7)] z-10 flex items-center justify-center px-6"
     >
+      {/* Modal */}
       <div className="bg-white p-4 rounded-xl w-full max-w-[30rem]">
         <section className="relative mb-8 p-4">
           <div className="text-center">Share this Linktree</div>
@@ -40,7 +42,9 @@ const ShareModal = ({ onCloseHandler }) => {
           </button>
         </section>
 
+        {/* Share Buttons container */}
         <section className="flex flex-col">
+          {/* Share to Facebook Button */}
           <FacebookShareButton url={url} className="w-full">
             <div className="flex relative items-center w-full gap-2 rounded-lg p-4 hover:bg-gray">
               <FacebookIcon size={32} borderRadius={12} />
@@ -60,6 +64,7 @@ const ShareModal = ({ onCloseHandler }) => {
             </div>
           </FacebookShareButton>
 
+          {/* Share to LinkedIn button */}
           <LinkedinShareButton url={url} className="w-full">
             <div className="flex relative items-center w-full gap-2 rounded-lg p-4 hover:bg-gray">
               <LinkedinIcon size={32} borderRadius={12} />
@@ -78,6 +83,8 @@ const ShareModal = ({ onCloseHandler }) => {
               </svg>
             </div>
           </LinkedinShareButton>
+
+          {/*Share to Twitter button */}
           <TwitterShareButton url={url} className="w-full">
             <div className="flex relative items-center w-full gap-2 rounded-lg p-4 hover:bg-gray">
               <TwitterIcon size={32} borderRadius={12} />
@@ -96,6 +103,8 @@ const ShareModal = ({ onCloseHandler }) => {
               </svg>
             </div>
           </TwitterShareButton>
+
+          {/* Share to whatsapp button */}
           <WhatsappShareButton url={url} className="w-full">
             <div className="flex relative items-center w-full gap-2 rounded-lg p-4 hover:bg-gray">
               <WhatsappIcon size={32} borderRadius={12} />
@@ -114,6 +123,8 @@ const ShareModal = ({ onCloseHandler }) => {
               </svg>
             </div>
           </WhatsappShareButton>
+
+          {/* Share to facebook messenger button */}
           <FacebookMessengerShareButton url={url} className="w-full">
             <div className="flex relative items-center w-full gap-2 rounded-lg p-4 hover:bg-gray">
               <FacebookMessengerIcon size={32} borderRadius={12} />
@@ -132,6 +143,8 @@ const ShareModal = ({ onCloseHandler }) => {
               </svg>
             </div>
           </FacebookMessengerShareButton>
+
+          {/* Share to email button */}
           <EmailShareButton url={url} className="w-full">
             <div className="flex relative items-center w-full gap-2 rounded-lg p-4 hover:bg-gray">
               <EmailIcon size={32} borderRadius={12} />
@@ -153,6 +166,7 @@ const ShareModal = ({ onCloseHandler }) => {
         </section>
 
         <section className="p-4">
+          {/* Copy to clipboard */}
           <div
             className="flex justify-between border border-gray p-4 rounded-lg cursor-pointer hover:bg-gray"
             onClick={() => {

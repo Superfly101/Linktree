@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "./components/Footer/Footer";
-import Links from "./components/Links/Links";
+import ProfileLinks from "./components/ProfileLinks/ProfileLinks";
 import Profile from "./components/Profile/Profile";
 import ShareModal from "./components/ShareModal/ShareModal";
 
@@ -13,28 +13,18 @@ function App() {
 
   return (
     <>
+      {/* Modal to share linktree to other platforms (Whatsapp, Twitter, LinkedIn) */}
       {shareModalShown && <ShareModal onCloseHandler={toggleShareModal} />}
+
       <main className="container mx-auto px-4">
+        {/*Profile Avatar */}
         <Profile onShareHandler={toggleShareModal} />
-        <Links />
-        <div className="flex justify-center gap-4 h-14 p-4">
-          <a>
-            <img
-              src="/icons/slack-icon.png"
-              className="h-full"
-              alt="Slack icon"
-            />
-          </a>
-          <a href="https://github.com/Superfly101/linktree">
-            <img
-              src="/icons/github-icon.png"
-              className="h-full"
-              alt="GitHub icon"
-            />
-          </a>
-        </div>
+
+        {/* Profile links section */}
+        <ProfileLinks />
       </main>
 
+      {/* Footer */}
       <Footer />
     </>
   );
