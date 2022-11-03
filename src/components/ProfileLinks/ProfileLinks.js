@@ -6,13 +6,25 @@ const Links = () => {
       title: "Twitter Link",
       url: "https://twitter.com/i_amsuperfly",
       id: "twitter",
+      target: "_blank",
     },
-    { title: "Zuri Team", url: "https://training.zuri.team/", id: "btn__zuri" },
-    { title: "Zuri Books", url: "http://books.zuri.team/", id: "books" },
+    {
+      title: "Zuri Team",
+      url: "https://training.zuri.team/",
+      id: "btn__zuri",
+      target: "_blank",
+    },
+    {
+      title: "Zuri Books",
+      url: "http://books.zuri.team/",
+      id: "books",
+      target: "_blank",
+    },
     {
       title: "Python Books",
       url: "https://books.zuri.team/python-for-beginners?ref_id=Superfly",
       id: "book__python",
+      target: "_blank",
     },
     {
       title: "Background Checks for Code",
@@ -23,13 +35,19 @@ const Links = () => {
       title: "Design Books",
       url: "https://books.zuri.team/design-rules",
       id: "book__design",
+      target: "_blank",
+    },
+    {
+      title: "Contact Me",
+      url: "/contact",
+      id: "contact",
     },
   ];
   return (
     <section className="flex flex-col gap-4 items-center">
       {/* Links to the things I sell */}
       {LINK_LIST.map((link) => (
-        <Button key={link.id} id={link.id} url={link.url}>
+        <Button key={link.id} id={link.id} url={link.url} target={link.target}>
           {link.title}
         </Button>
       ))}
