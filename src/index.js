@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
 import Layout from "./components/Layout/Layout";
+import ContactPage from "./routes/contact";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "contact",
-        element: <Contact />,
+        element: <ContactPage />,
       },
     ],
   },
