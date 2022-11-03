@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Footer from "./components/Footer/Footer";
 import ProfileLinks from "./components/ProfileLinks/ProfileLinks";
 import Profile from "./components/Profile/Profile";
 import ShareModal from "./components/ShareModal/ShareModal";
@@ -23,9 +22,6 @@ function App() {
         {/* Profile links section */}
         <ProfileLinks />
       </main>
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 }
