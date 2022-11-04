@@ -15,7 +15,9 @@ const Contact = () => {
         <form className="py-8 flex flex-col gap-4" onSubmit={onSubmitHandler}>
           <div className="flex flex-col gap-4 md:flex-row">
             <div className="flex flex-col gap-2 w-full">
-              <label className="text-[#344054] text-sm">First name</label>
+              <label className="text-[#344054] text-sm" htmlFor="first_name">
+                First name
+              </label>
               <input
                 id="first_name"
                 placeholder="Enter your first name"
@@ -25,7 +27,9 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col gap-2 w-full">
-              <label className="text-[#344054] text-sm">Last name</label>
+              <label className="text-[#344054] text-sm" htmlFor="last_name">
+                Last name
+              </label>
               <input
                 id="last_name"
                 placeholder="Enter your last name"
@@ -36,7 +40,9 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[#344054] text-sm">Email</label>
+            <label className="text-[#344054] text-sm" htmlFor="email">
+              Email
+            </label>
             <input
               id="email"
               placeholder="johndoe@email.com"
@@ -46,7 +52,9 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[#344054] text-sm">First name</label>
+            <label className="text-[#344054] text-sm" htmlFor="message">
+              First name
+            </label>
             <textarea
               id="message"
               placeholder="Send me a message and I'll reply you as soon as possible..."
@@ -57,8 +65,8 @@ const Contact = () => {
           </div>
 
           <div className="flex gap-2 items-start">
-            <input type="checkbox" className="mt-1" />
-            <label className="text-sm">
+            <input id="agree" type="checkbox" className="mt-1" />
+            <label className="text-sm" htmlFor="agree">
               You agree to providing your data to @i_amsuperfly who may contact
               you.
             </label>
