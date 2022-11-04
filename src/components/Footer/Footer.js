@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="relative container mx-auto px-4 py-8 flex flex-col gap-4 justify-between  md:items-center md:flex-row">
-      <hr className="text-gray my-2 absolute top-0 w-full" />
+      <hr className="text-gray my-2 absolute top-0 left-0 w-full" />
       <div className="w-32 md:w-36">
         <img src="/Zuri.Internship_Logo.png" className="w-full" />
       </div>

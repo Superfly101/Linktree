@@ -52,7 +52,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <input type="checkbox" className="relative -top-3 md:top-0" />
             <label>
               You agree to providing your data to @i_amsuperfly who may contact
